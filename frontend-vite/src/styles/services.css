@@ -1,0 +1,109 @@
+/* ===== PAGE ===== */
+.servicesPage {
+  padding: 40px 20px;
+  background: linear-gradient(to bottom, #f8fafc, #eef2ff);
+  min-height: 100vh;
+}
+
+/* ===== HEADER ===== */
+.servicesHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.sectionTitle {
+  font-size: 28px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.sectionSubtitle {
+  font-size: 14px;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+/* ===== COUNT BADGE ===== */
+.servicesCount {
+  font-size: 13px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+/* ===== GRID ===== */
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+/* ===== SERVICE CARD ===== */
+.serviceCardBox {
+  padding: 18px;
+  border-radius: 14px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+/* HOVER EFFECT */
+.serviceCardBox:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* CLICK (ACTIVE) EFFECT */
+.serviceCardBox.active {
+  border-color: #3b82f6;
+  background: rgba(59, 130, 246, 0.08);
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.2);
+}
+
+/* ===== TITLE ===== */
+.serviceTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* ===== DESCRIPTION ===== */
+.serviceDesc {
+  font-size: 13px;
+  color: #64748b;
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
+/* ===== BOTTOM SECTION ===== */
+.serviceBottom {
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* ===== PRICE ===== */
+.servicePrice {
+  font-size: 14px;
+  font-weight: 700;
+  color: #3b82f6;
+  background: rgba(59, 130, 246, 0.1);
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+/* ===== EMPTY STATE ===== */
+.emptyState {
+  text-align: center;
+  padding: 40px;
+  color: #64748b;
+  font-size: 14px;
+}

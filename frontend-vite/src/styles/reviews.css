@@ -1,0 +1,170 @@
+/* ===== REVIEWS SECTION ===== */
+.reviewsSection .sectionHeader {
+  margin-bottom: 10px;
+}
+
+/* ===== GRID ===== */
+/* ===== GRID FIX (LEFT → RIGHT FLOW 🔥) ===== */
+.reviewsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* 🔥 full width */
+  gap: 20px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* ===== REVIEW CARD ===== */
+.reviewCard {
+  width: 100%; /* ✅ prevent stretching */
+  padding: 18px;
+  border-radius: 14px;
+  text-align: left;
+  background: var(--card);
+  border: 1px solid var(--border);
+  transition: all 0.2s ease;
+}
+
+/* HOVER */
+.reviewCard:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* ===== STARS ===== */
+.reviewStars {
+  display: flex;
+  gap: 3px;
+}
+
+.reviewStar {
+  color: #d1d5db;
+  font-size: 16px;
+}
+
+.reviewStarOn {
+  color: #fbbf24;
+}
+
+/* ===== COMMENT ===== */
+.reviewComment {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+/* ===== META ===== */
+.reviewMeta {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid #f1f5f9;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 13px;
+}
+
+.reviewAuthor {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.reviewService {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* ===== PAGE ===== */
+/* Fix reviews container alignment */
+.reviewsSectionPage {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ===== FORM CARD FIX (MAIN ISSUE 🔥) ===== */
+.reviewFormCard {
+  margin: 0 auto;              /* ✅ center horizontally */
+  max-width: 600px;           /* ✅ control width */
+  width: 100%;                /* ✅ responsive */
+  padding: 20px;
+  border-radius: 14px;
+  background: var(--card);
+  border: 1px solid var(--border);
+}
+
+/* ===== FORM ===== */
+.reviewForm {
+  display: grid;
+  gap: 14px;
+  width: 100%;                /* ✅ fill container */
+}
+
+/* INPUT + TEXTAREA */
+.reviewForm select,
+.reviewForm textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.reviewForm select:focus,
+.reviewForm textarea:focus {
+  border-color: #3b82f6;
+}
+
+/* TEXTAREA */
+.reviewTextarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+/* ===== RATING ===== */
+.reviewRatingPick {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+/* ===== STAR RATING (NO BOX STYLE) ===== */
+.reviewRatingBtn {
+  font-size: 26px;
+  border: none;
+  background: transparent;   /* ❌ remove blue box */
+  padding: 0;                /* ❌ remove spacing box */
+  margin-right: 4px;
+  color: #d1d5db;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.15s ease;
+}
+
+/* HOVER */
+.reviewRatingBtn:hover {
+  color: #fbbf24;
+  transform: scale(1.1);
+}
+
+/* ACTIVE */
+.reviewRatingBtn.on {
+  color: #fbbf24;
+}
+
+/* ===== BUTTON ===== */
+.reviewForm button {
+  background: #3b82f6;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.reviewForm button:hover {
+  background: #2563eb;
+}

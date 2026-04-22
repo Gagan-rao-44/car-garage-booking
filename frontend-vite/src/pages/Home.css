@@ -1,0 +1,394 @@
+/* HOME PAGE ROOT */
+.homePage {
+  width: 100%;
+}
+
+/* HERO SECTION (uses your existing .hero but improves spacing) */
+.hero .container {
+  max-width: 900px;
+}
+
+/* BADGE (if not already added) */
+.badge {
+  display: inline-block;
+  margin-bottom: 15px;
+  background: #e0e7ff;
+  color: #3730a3;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* SECTION HEADINGS */
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #0f172a;
+}
+
+/* SERVICES SECTIONS (used multiple times) */
+.services {
+  width: 100%;
+  padding: 60px 0;
+}
+
+/* CONTAINER FIX (center content but full width layout) */
+.services .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* GRID SPACING IMPROVEMENT */
+.grid {
+  gap: 25px;
+}
+
+/* FEATURE CARDS */
+.card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  text-align: center;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+/* SERVICE CARDS (NO IMAGE VERSION) */
+.service-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  border: 1px solid #e2e8f0;
+}
+
+.service-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.service-card p {
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+/* SECTION SPACING IMPROVEMENT */
+.services h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #0f172a;
+}
+
+/* REVIEWS SECTION */
+.services .container > h2 {
+  text-align: left;
+}
+
+/* BUTTON SPACING (HERO FIX) */
+.hero .btn {
+  margin-top: 10px;
+}
+
+/* FOOTER SPACING FIX */
+footer {
+  margin-top: 40px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  .services {
+    padding: 40px 0;
+  }
+
+  .services .container {
+    padding: 0 20px;
+  }
+
+  .hero .container {
+    padding: 0 20px;
+  }
+
+  .section-title,
+  .services h2 {
+    font-size: 1.4rem;
+  }
+
+}
+
+/* ===== ALL SECTIONS FULL WIDTH ===== */
+.homeQuick,
+.servicesSection,
+.extraSection,
+.reviewsSection {
+  width: 100%;
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+
+/* ===== CENTER CONTENT ===== */
+.sectionContainer {
+  max-width: 1200px;
+  margin: 0 auto;   /* 🔥 centers content */
+  width: 100%;
+}
+
+/* ===== OPTIONAL BACKGROUND ===== */
+/* ===== HOME QUICK ===== */
+.homeQuick {
+  width: 100%;
+  padding: 60px 20px;
+  background: #f8fafc;
+
+  display: flex;
+  justify-content: center;   /* center horizontally */
+}
+
+/* ===== SERVICES ===== */
+.servicesSection {
+  width: 100%;
+  padding: 60px 20px;
+  background: #ffffff;
+
+  display: flex;
+  justify-content: center;
+}
+
+/* ===== EXTRA ===== */
+.extraSection {
+  width: 100%;
+  padding: 60px 20px;
+  background: #f1f5f9;
+
+  display: flex;
+  justify-content: center;
+}
+
+/* ===== REVIEWS ===== */
+.reviewsSection {
+  width: 100%;
+  padding: 60px 20px;
+  background: #ffffff;
+
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Home */
+.homeHero {
+  margin-top: 18px;
+  padding: 26px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.12), var(--card));
+  border: 1px solid var(--border);
+}
+
+.homeHeroInner {
+  max-width: 760px;
+}
+
+.homeHeroTitle {
+  margin-top: 10px;
+  letter-spacing: -0.5px;
+}
+
+.homeHeroSubtitle {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.homeHeroActions {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.homeQuick {
+  margin-top: 16px;
+}
+
+.homeQuickGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+@media (max-width: 860px) {
+  .homeQuickGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.homeQuickCard {
+  border-left: 4px solid rgba(37, 99, 235, 0.35);
+}
+
+.homeQuickTitle {
+  font-weight: 800;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.homeQuickText {
+  margin-top: 6px;
+  font-size: 13px;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 18px;
+  align-items: stretch;
+}
+
+@media (max-width: 860px) {
+  .heroGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.heroTitle {
+  font-size: clamp(28px, 4vw, 46px);
+  line-height: 1.1;
+  margin: 0;
+  letter-spacing: -0.6px;
+}
+
+.heroSubtitle {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.heroActions {
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.statGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.stat {
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: var(--card);
+}
+
+.statValue {
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.statLabel {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.homeBg {
+  min-height: 100vh;
+  background-color: var(--bg);
+  background:
+    linear-gradient(180deg, rgba(245, 247, 255, 0.25), rgba(245, 247, 255, 0.55)),
+   
+      center/cover no-repeat;
+  background-position: center top;
+}
+
+.homeOverlay {
+  padding: 18px 0 40px;
+}
+
+/* Home sections */
+.homeBg .servicesSection,
+.homeBg .extraSection,
+.homeBg .reviewsSection {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: none;
+}
+
+.homeBg .servicesSection {
+  padding: 22px;
+}
+
+.homeBg .extraSection,
+.homeBg .reviewsSection {
+  padding: 22px;
+}
+
+/* Home services (scoped to avoid conflicts with Services page grid) */
+.homeServicesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+@media (max-width: 980px) {
+  .homeServicesGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .homeServicesGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.homeServiceCard {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--card);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.homeServiceCard img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+  filter: saturate(1.05) contrast(1.02);
+}
+
+.homeServiceCard h4 {
+  margin: 12px 12px 6px;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: -0.2px;
+}
+
+.homeServiceCard p {
+  margin: 0;
+  font-size: 13px;
+  padding: 0 12px 14px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.homeServiceCard:hover {
+  border-color: rgba(47, 124, 246, 0.5);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+}

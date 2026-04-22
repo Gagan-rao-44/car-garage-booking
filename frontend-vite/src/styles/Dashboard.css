@@ -1,0 +1,107 @@
+.booking-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  transition: 0.2s;
+}
+
+.booking-card:hover {
+  transform: translateY(-3px);
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-top h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.status {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.status.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status.completed {
+  background: #d1e7dd;
+  color: #0f5132;
+}
+
+.status.cancelled {
+  background: #f8d7da;
+  color: #842029;
+}
+
+.card-details {
+  margin-top: 12px;
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.card-details span {
+  font-weight: 600;
+  color: #555;
+}
+
+.card-actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn-primary {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-outline {
+  border: 1px solid #ddd;
+  background: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-danger {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.edit-section {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edit-section input,
+.edit-section select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.edit-actions {
+  display: flex;
+  gap: 10px;
+}

@@ -1,0 +1,94 @@
+/* ===== PAGE ===== */
+.page {
+  padding: 30px 0;
+}
+
+/* HEADER */
+.adminHeader {
+  margin-bottom: 20px;
+}
+
+/* CARD */
+.adminCard {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 20px;
+}
+
+/* FORM */
+.adminForm {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.control {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  flex: 1;
+}
+
+/* SERVICE CARD */
+.adminServiceCard {
+  background: white;
+  border-radius: 14px;
+  padding: 18px;
+  border: 1px solid #e2e8f0;
+  transition: 0.25s ease;
+}
+
+.adminServiceCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.adminServiceTitle {
+  font-weight: 700;
+}
+
+.adminPrice {
+  color: #3b82f6;
+}
+
+.adminActions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+/* BOOKINGS */
+.bookingCard {
+  background: white;
+  border-radius: 14px;
+  padding: 18px;
+  border: 1px solid #e2e8f0;
+  margin-top: 12px;
+}
+
+.bookingRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+/* STATUS */
+.statusPending {
+  background: #fef9c3;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.statusCompleted {
+  background: #dcfce7;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.statusInProgress {
+  background: #dbeafe;
+  padding: 4px 10px;
+  border-radius: 999px;
+}

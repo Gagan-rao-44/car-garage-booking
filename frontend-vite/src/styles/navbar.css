@@ -1,0 +1,150 @@
+/* ===== NAVBAR ROOT ===== */
+.nav {
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  /* subtle shadow */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+/* ===== CONTAINER FIX ===== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===== NAV INNER ===== */
+.navInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+/* ===== BRAND ===== */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* LOGO DOT */
+.brandMark {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+}
+
+/* ===== RIGHT SIDE ===== */
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-left: auto; /* 🔥 pushes to right */
+}
+
+/* ===== NAV LINKS ===== */
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* LINK STYLE */
+.navLink {
+  font-size: 14px;
+  font-weight: 500;
+  color: #475569;
+  position: relative;
+  transition: 0.25s ease;
+}
+
+/* hover underline effect */
+.navLink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #3b82f6;
+  transition: 0.3s ease;
+}
+
+.navLink:hover {
+  color: #1e293b;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  color: #1e293b;
+  transition: 0.25s ease;
+}
+
+.btn:hover {
+  background: #e2e8f0;
+}
+
+/* PRIMARY BUTTON */
+.btnPrimary {
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  color: white;
+  border: none;
+}
+
+.btnPrimary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(59, 130, 246, 0.25);
+}
+
+/* DANGER BUTTON */
+.btnDanger {
+  background: #ef4444;
+  color: white;
+  border: none;
+}
+
+.btnDanger:hover {
+  background: #dc2626;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+
+  .navInner {
+    flex-direction: column;
+    height: auto;
+    gap: 12px;
+    padding: 10px 0;
+  }
+
+  .navRight {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .navLinks {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+}

@@ -1,0 +1,50 @@
+/* Extra section ("Why choose") */
+.extraSection {
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+}
+
+.extraGrid {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.extraCard {
+  flex: 1;
+  min-width: 240px;
+  max-width: 320px;
+  padding: 20px;
+  border-radius: 16px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.extraCard:hover {
+  border-color: rgba(47, 124, 246, 0.6);
+  box-shadow: 0 10px 30px rgba(47, 124, 246, 0.2);
+}
+
+.extraCard h4 {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.extraCard p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.extraSection .sectionTitle {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+}
