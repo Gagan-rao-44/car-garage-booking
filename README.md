@@ -154,7 +154,7 @@ npm run dev
 
 ## 👨‍💻 Developer
 
-**Gagan **
+Gagan 
 
 Computer Science & Engineering
 
